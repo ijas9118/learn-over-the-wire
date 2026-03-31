@@ -46,6 +46,16 @@ Once logged in, the password for the next level is stored in a file called `read
 cat readme
 ```
 
+#### 4. Exiting and Storing
+Once the password is found, exit the remote server and store it locally for the next level.
+
+```bash
+exit
+
+# Save the password for Level 1
+echo "PASSWORD" > passwords/bandit/lvl01
+```
+
 ### Command Reference
 
 | Command | Switch | Function |
