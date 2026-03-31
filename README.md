@@ -2,7 +2,6 @@
 
 ![Platform](https://img.shields.io/badge/Platform-OverTheWire-000000?style=for-the-badge&logo=linux)
 ![Wargame](https://img.shields.io/badge/Wargame-Bandit-red?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-Level_11_Complete-blue?style=for-the-badge)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash)
 
 Welcome to my repository documenting the solutions and key learnings from the **OverTheWire Bandit** wargames. This project serves as a revision guide for mastering fundamental Linux commands, security principles, and terminal-based puzzle solving.
@@ -29,19 +28,6 @@ sshpass -p $(cat passwords/bandit/lvl11) ssh bandit11@bandit.labs.overthewire.or
 | Level Range | Core Concepts | Documentation |
 | :--- | :--- | :--- |
 | **00 → 11** | SSH, Hidden Files, Find, Grep, Base64, ROT13 | [Bandit Level Docs](./01-bandit/) |
-
----
-
-## 🎓 Command Toolbox
-
-| Tool | Focus | Usage Example |
-| :--- | :--- | :--- |
-| `ls` | **Exploration** | `ls -al` (hidden files), `ls -R` (recursive) |
-| `find` | **System-Wide Search** | `find / -user bandit7 -size 33c 2>/dev/null` |
-| `grep` | **Pattern Analysis** | `grep -w "whole-word"`, `grep "="` |
-| `base64` | **Encoding** | `cat data.txt | base64 -d` |
-| `tr` | **Translation** | `cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'` |
-| `sshpass` | **Automation** | Providing passwords for non-interactive SSH sessions. |
 
 ---
 
