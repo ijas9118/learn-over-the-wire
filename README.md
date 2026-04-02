@@ -2,7 +2,8 @@
 
 ![Platform](https://img.shields.io/badge/Platform-OverTheWire-000000?style=for-the-badge&logo=linux)
 ![Wargame](https://img.shields.io/badge/Wargame-Bandit-red?style=for-the-badge)
-![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash)
+![Progress](https://img.shields.io/badge/Progress-Level_12_Complete-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 Welcome to my repository documenting the solutions and key learnings from the **OverTheWire Bandit** wargames. This project serves as a revision guide for mastering fundamental Linux commands, security principles, and terminal-based puzzle solving.
 
@@ -17,8 +18,8 @@ To keep the learning process efficient and safe, I follow a specific local setup
 3.  **Non-Interactive Login**: Using `sshpass` combined with the locally stored credentials allows for instant connection without manual entry.
 
 ```bash
-# Connecting to Level 11 for example:
-sshpass -p $(cat passwords/bandit/lvl11) ssh bandit11@bandit.labs.overthewire.org -p 2220
+# Connecting to Level 12 for example:
+sshpass -p $(cat passwords/bandit/lvl12) ssh bandit12@bandit.labs.overthewire.org -p 2220
 ```
 
 ---
@@ -27,7 +28,7 @@ sshpass -p $(cat passwords/bandit/lvl11) ssh bandit11@bandit.labs.overthewire.or
 
 | Level Range | Core Concepts | Documentation |
 | :--- | :--- | :--- |
-| **00 → 11** | SSH, Hidden Files, Find, Grep, Base64, ROT13 | [Bandit Level Docs](./01-bandit/) |
+| **00 → 12** | SSH, Find, Grep, Base64, ROT13, Compression | [Bandit Level Docs](./01-bandit/) |
 
 ---
 
@@ -36,12 +37,19 @@ sshpass -p $(cat passwords/bandit/lvl11) ssh bandit11@bandit.labs.overthewire.or
 ```text
 learn-overthewire/
 ├── .gitignore              # Protects our local passwords
+├── LICENSE                 # Repository license
 ├── 01-bandit/              # Individual level walkthroughs
 │   ├── level-00.md
 │   ├── ...
-│   └── level-11.md
+│   └── level-12.md
 └── passwords/              # (Gitignored) Local credential storage
 ```
+
+---
+
+## 📄 License
+
+This repository is licensed under the **MIT License**. For full details, see the [LICENSE](./LICENSE) file.
 
 ---
 
